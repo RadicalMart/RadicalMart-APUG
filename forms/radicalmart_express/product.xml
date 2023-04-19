@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldprefix="Joomla\Component\RadicalMartExpress\Administrator\Field">
+	<fieldset name="after_payment_user_groups" label="PLG_RADICALMART_APUG_FIELDSET">
+		<fields name="plugins">
+			<field name="apug" type="groups"
+				   label="PLG_RADICALMART_APUG_FIELD"
+				   hint=" "
+				   addfieldprefix="Joomla\Plugin\RadicalMart\APUG\Field"
+				   multiple="true"
+				   layout="joomla.form.field.list-fancy-select">
+			</field>
+		</fields>
+	</fieldset>
+</form>

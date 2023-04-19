@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.2" type="plugin" group="radicalmart" method="upgrade">
+	<name>PLG_RADICALMART_APUG</name>
+	<author>Delo Design</author>
+	<creationDate>April 2023</creationDate>
+	<copyright>Copyright © 2023 Delo Design. All rights reserved.</copyright>
+	<license>https://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>boss@delo-design.ru</authorEmail>
+	<authorUrl>https://delo-design.ru</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_RADICALMART_APUG_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\RadicalMart\APUG</namespace>
+	<scriptfile>script.php</scriptfile>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_radicalmart_apug.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_radicalmart_apug.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_radicalmart_apug.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_radicalmart_apug.sys.ini</language>
+	</languages>
+	<files>
+		<folder>forms</folder>
+		<folder>services</folder>
+		<folder plugin="apug">src</folder>
+	</files>
+	<updateservers>
+		<server type="extension" priority="1" name="RadicalMart - APUG">
+			https://sovmart.ru/update?element=plg_radicalmart_apug
+		</server>
+	</updateservers>
+</extension>
