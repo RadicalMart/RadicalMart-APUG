@@ -167,7 +167,7 @@ class APUG extends CMSPlugin implements SubscriberInterface
 		{
 			/* @var \Joomla\Component\RadicalMart\Administrator\Model\OrderModel $model */
 			$model    = Factory::getApplication()->bootComponent('com_radicalmart')->getMVCFactory()
-				->createModel('Order', 'Administrator');
+				->createModel('Order', 'Administrator', ['ignore_request' => true]);
 			$params   = RadicalMartParamsHelper::getComponentParams();
 			$statuses = ArrayHelper::toInteger($params->get('apug_statuses', []));
 		}
@@ -175,7 +175,7 @@ class APUG extends CMSPlugin implements SubscriberInterface
 		{
 			/* @var \Joomla\Component\RadicalMartExpress\Administrator\Model\OrderModel $model */
 			$model    = Factory::getApplication()->bootComponent('com_radicalmart_express')->getMVCFactory()
-				->createModel('Order', 'Administrator');
+				->createModel('Order', 'Administrator', ['ignore_request' => true]);
 			$params   = RadicalMartExpressParamsHelper::getComponentParams();
 			$statuses = [2];
 		}
